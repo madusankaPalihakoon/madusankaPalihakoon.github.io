@@ -1,157 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madusanka Palihakoon - Full-stack Developer</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body style="background-color: #b8bfc4;">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="" style="color: lightblue;">Madusanka Palihakoon</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body class="bg-gray-100 text-gray-900">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-light active" href="">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="">Education</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="">Skills</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="">Projects</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="">Contact</a>
-          </li>
-        </ul>
-        <div class="my-2 my-lg-0">
-          <a class="btn btn-success my-2 my-sm-0" href="mailto:pmsmpalihakoon@gmail.com" role="button">Send Email</a>
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Your Name</h1>
+            <nav>
+                <a href="#about" class="px-4">About</a>
+                <a href="#skills" class="px-4">Skills</a>
+                <a href="#projects" class="px-4">Projects</a>
+                <a href="#contact" class="px-4">Contact</a>
+            </nav>
         </div>
-      </div>
-    </nav>
+    </header>
 
-    <div class="container-fluid d-md-flex home" id="Home">
-      <div class="col-md-9">
-        <h2 class="name">Hello, I'm Sanjaya Madusanka Palihakoon</h2>
-        <p class="summary">I'm dedicated Full Stack Developer with a passion for creating efficient and user-friendly web applications. Proficient in both front-end and back-end development, with expertise in languages such as JavaScript, HTML, CSS, and frameworks like React and Node.js. Skilled in database management and deployment processes, ensuring smooth functionality of projects from conception to implementation. Committed to continuous learning and staying updated with the latest technologies in the field. Excellent problem-solving abilities and a strong team player, ready to contribute to innovative projects and deliver high-quality solutions.</p>
-        <div class="col-md-12">
-          <button class="btn homeBtn" type="button "><i class="bi bi-briefcase-fill"></i> Projects</button>
-          <button class="btn homeBtn" type="button"><i class="bi bi-patch-check-fill"></i> Show Resume</button>
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-lg leading-relaxed">
+                Hi there! I'm a Web Developer with a passion for creating responsive and user-friendly websites.
+                I hold a diploma in ICT and have experience in both frontend and backend development.
+                My expertise lies in building dynamic user interfaces and robust backend systems.
+            </p>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-3 text-center img-col">
-        <div class="img-container">
-          <img src="assets/profile/profile.jpg" alt="">
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Frontend Development</h3>
+                    <ul class="list-disc list-inside">
+                        <li>HTML5</li>
+                        <li>CSS3 (SASS)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Backend Development</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Node.js</li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Database Management</h3>
+                    <ul class="list-disc list-inside">
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Version Control</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Git (GitHub, GitLab)</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">API Design and Integration</h3>
+                    <ul class="list-disc list-inside">
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Deployment and DevOps</h3>
+                    <ul class="list-disc list-inside">
+                        <li>CI/CD (Jenkins, Travis CI)</li>
+                        <li>Docker</li>
+                        <li>AWS, Azure, Google Cloud</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <main>
-    <!-- About -->
-    <div class="container-fluid About section" id="About">
-      <h2 class="section-heading">About</h2>
-      <div class="d-md-flex">
-        <div class="col-md-6">
-          <ul><b><i class="bi bi-pen-fill"></i> Name :</b> Sanjaya Madusanka Palihakoon</ul>
-          <ul><b><i class="bi bi-geo-alt-fill"></i> Address :</b> Diyanilla Kandura, Watagamuwa, Bandarawela</ul>
-          <ul><b><i class="bi bi-telephone-fill"></i> Phone :</b> 078-771-3211</ul>
-          <ul><b><i class="bi bi-envelope-at-fill"></i> Email :</b> <a href="mailto:pmsmpalihakoon@gmail.com">pmsmpalihakoon@gmail.com</a></ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Project 1 Name</h3>
+                    <p class="text-lg leading-relaxed">Brief description of the project.</p>
+                    <a href="link-to-repo" class="text-blue-600 mt-4 block">View Project</a>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Project 2 Name</h3>
+                    <p class="text-lg leading-relaxed">Brief description of the project.</p>
+                    <a href="link-to-repo" class="text-blue-600 mt-4 block">View Project</a>
+                </div>
+                <div class="p-6 bg-white shadow rounded">
+                    <h3 class="text-2xl font-semibold mb-4">Project 3 Name</h3>
+                    <p class="text-lg leading-relaxed">Brief description of the project.</p>
+                    <a href="link-to-repo" class="text-blue-600 mt-4 block">View Project</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <ul><b><i class="bi bi-flag-fill"></i> Nationality :</b> Sri Lankan</ul>
-          <ul><b><i class="bi bi-person-fill"></i> Marital Status :</b> Single</ul>
-          <ul><b><i class="bi bi-gender-male"></i> Gender :</b> Male</ul>
-          <ul><b><i class="bi bi-calendar-event-fill"></i> Age :</b> 21</ul>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Education -->
-    <div class="container-fluid Education section" id="Education">
-      <h2 class="section-heading">Education</h2>
-
-      <h3><i class="bi bi-circle-fill"></i> National Diploma in Information and Communication (2022-2023)</h3>
-      <h6 class="edu-sub">College of Technology - Badulla</h6>
-      <div class="d-md-flex edu-content">
-        <div class="col-md-6">
-          <ul>Graphics Design</ul>
-          <ul>System Analysis and Design</ul>
-          <ul>Web Programming</ul>
-          <ul>Software Programming</ul>
-          <ul>Database System</ul>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+            <p class="text-lg leading-relaxed mb-6">Feel free to reach out if you have any questions or collaboration ideas!</p>
+            <a href="mailto:your.email@example.com" class="text-lg leading-relaxed underline">your.email@example.com</a>
+            <div class="mt-6">
+                <a href="https://linkedin.com/in/yourprofile" class="text-lg leading-relaxed underline mr-4">LinkedIn</a>
+                <a href="http://yourportfolio.com" class="text-lg leading-relaxed underline">Portfolio</a>
+            </div>
         </div>
-        <div class="col-md-6">
-          <ul>Local Area Network</ul>
-          <ul>Software Testing</ul>
-          <ul>Work place communication Plan Work to be Performed at Workplace</ul>
-          <ul>Work place information & Workplace Communication</ul>
-        </div>
-      </div>
+    </section>
 
-      <h3><i class="bi bi-circle-fill black-circle"></i> G.C.E. (O/L) EXAMINATION (2014)</h3>
-      <h6 class="edu-sub">B/Watagamuwa Vidyalaya</h6>
-      <div class="d-md-flex edu-content">
-        <div class="col-md-6">
-          <ul>Mathematics  : <b>C</b></ul>
-          <ul>Science  : <b>C</b></ul>
-          <ul>History  : <b>C</b></ul>
-          <ul>Sinhala  : <b>C</b></ul>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
-        <div class="col-md-6">
-          <ul>English  : <b>S</b></ul>
-          <ul>Agriculture  : <b>C</b></ul>
-          <ul>Citizenship Education & Democratic Governance  : <b>C</b></ul>
-          <ul>Music(Western)  : <b>S</b></ul>
-        </div>
-      </div>
-    </div>
+    </footer>
 
-    <!-- Skill -->
-    <div class="container-fluid Skill section" id="Skill">
-      <h2>Skills</h2>
-      <div class="d-md-flex edu-content">
-        <div class="col-md-12">
-          <ul>HTML : <input type="range" value="100"></ul>
-          <ul>CSS (including CSS frameworks like Bootstrap or Tailwind CSS) : <input type="range" value="80"></ul>
-          <ul>JavaScript (vanilla JavaScript and familiarity with libraries/frameworks like React,Node.js) : <input type="range" value="70"></ul>
-          <ul>Python : <input type="range" value="50"></ul>
-          <ul>PHP : <input type="range" value="90"></ul>
-          <ul>Databases (SQL) : <input type="range" value="90"></ul>
-          <ul>Git : <input type="range" value="90"></ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="container-fluid Projects section" id="Projects">
-      <h2>Projects</h2>
-      <div class="d-md-flex edu-content">
-        <div class="col-md-12">
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <script src="assets/js/nav.js"></script>
 </body>
 </html>
